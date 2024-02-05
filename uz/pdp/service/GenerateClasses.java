@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class GenerateClasses {
-    public static void ok(){
+    public static synchronized void ok(){
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         executorService.shutdown();
         try {
