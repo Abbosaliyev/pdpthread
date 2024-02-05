@@ -1,19 +1,19 @@
-package entity;
+package a;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class C {
+public class A {
     private static final Lock lock=new ReentrantLock();
 
 
-    public static void methodOfC(){
+    public static void methodOfA(){
         try{
             lock.lock();
             Thread thread = new Thread(() -> {
                 for (int i = 0; i < 10; i++) {
-                    System.out.println("entity.C-Thread"+i);
-                   // System.out.println("entity.C thread ishladi");
+                    System.out.println("a.A-Thread"+i);
+                    //System.out.println("a.A thread ishladi");
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException e) {

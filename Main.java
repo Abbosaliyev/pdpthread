@@ -1,8 +1,8 @@
 import utils.Input;
-import entity.A;
-import entity.B;
-import entity.C;
-import entity.D;
+import a.A;
+import b.B;
+import c.C;
+import d.D;
 
 
 
