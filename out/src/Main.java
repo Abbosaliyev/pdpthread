@@ -17,7 +17,6 @@ public class Main {
 
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         Scanner scanner = new Scanner(System.in);
-        while (true){
             menu();
             int choice = scanner.nextInt();
             switch (choice){
@@ -40,7 +39,7 @@ public class Main {
                         GenerateRandomString.generateRandomString(5);
                     });
                     lock.unlock();
-            }
+
         }
 
     }
