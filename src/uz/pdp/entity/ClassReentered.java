@@ -8,12 +8,15 @@ public class ClassReentered {
         Lock lock = new ReentrantLock();
         Thread thread = new Thread(()->{
             lock.lock();
-            for (int i = 0; i < 10_000_000; i++) {
-                Test.a++;
+            try{
+                for (int i = 0; i < 10_000_000; i++) {
+                    Test.a++;
+                }
 
+            }finally {
+                System.out.println("with lock "+Test.a);
+                lock.unlock();
             }
-            System.out.println("with lock "+Test.a);
-            lock.unlock();
         });
         thread.start();
 
