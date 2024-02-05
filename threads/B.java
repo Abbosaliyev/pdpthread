@@ -8,8 +8,8 @@ public class B extends Thread {
 
     @Override
     public void run() {
+        lock.lock();
         try {
-            lock.lock();
             System.out.println("B class");
         } finally {
             lock.unlock();

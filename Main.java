@@ -17,19 +17,19 @@ public class Main {
         switch (index) {
             case 1 -> {
                 A a = new A();
-                a.start();
+                a.run();
             }
             case 2 -> {
                 B b = new B();
-                b.start();
+                b.run();
             }
             case 3 -> {
                 C c = new C();
-                c.start();
+                c.run();
             }
             case 4 -> {
                 D d = new D();
-                d.start();
+                d.run();
             }
         }
 
