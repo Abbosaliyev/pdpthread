@@ -43,9 +43,9 @@ public class Main {
     }
 
     private static void menu() {
-        System.out.println("Choose one of the actions: ");
         System.out.println("1-return entered text");
         System.out.println("2-return reverse entered text");
-        System.out.println("3-generate random string");
+        System.out.println("3-return entered text");
+        System.out.println("Choose one of the actions: ");
     }
 }
