@@ -22,19 +22,22 @@ public class Main {
             switch (new Scanner(System.in).nextInt()){
                 case 1:
                     lock.lock();
-                    ReturnEnteredString.returnEnteredString();
+                    executorService.execute(ReturnEnteredString::returnEnteredString);
                     lock.unlock();
                     break;
 
                 case 2:
                     lock.lock();
-                    ReverceEnteredString.reverseString();
+                    executorService.execute(ReverceEnteredString::reverseString);
+
                     lock.unlock();
                     break;
 
                 case 3:
                     lock.lock();
-                    GenerateRandomString.generateRandomString(5);
+                    executorService.execute(()->{
+                        GenerateRandomString.generateRandomString(5);
+                    });
                     lock.unlock();
             }
         }
