@@ -9,19 +9,19 @@ public class Main {
         System.out.print("Enter: ");
         String str = new Scanner(System.in).nextLine();
         switch (str) {
-            case "threads.A" -> {
+            case "A" -> {
                 A a = new A();
                 a.start();
             }
-            case "threads.B" -> {
+            case "B" -> {
                 B b = new B();
                 b.start();
             }
-            case "threads.C" -> {
+            case "C" -> {
                 C c = new C();
                 c.start();
             }
-            case "threads.D" -> {
+            case "D" -> {
                 D d = new D();
                 d.start();
             }

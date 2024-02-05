@@ -10,7 +10,7 @@ public class B extends Thread {
     public void run() {
         try {
             lock.lock();
-            System.out.println("threads.B class");
+            System.out.println("B class");
         } finally {
             lock.unlock();
         }
