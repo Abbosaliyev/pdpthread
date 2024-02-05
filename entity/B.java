@@ -13,7 +13,7 @@ public class B {
             Thread thread = new Thread(() -> {
                 for (int i = 0; i < 10; i++) {
                     System.out.println("entity.B-Thread"+i);
-                    System.out.println("entity.B thread ishladi");
+                    //System.out.println("entity.B thread ishladi");
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException e) {
