@@ -1,4 +1,4 @@
-package ReturnEnteredString;
+package returnEnteredString;
 
 import java.util.Scanner;
 

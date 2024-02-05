@@ -1,4 +1,4 @@
-package GenerateRandomString;
+package generateRandomString;
 
 import java.util.Random;
 

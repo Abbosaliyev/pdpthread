@@ -1,7 +1,7 @@
 
-import GenerateRandomString.GenerateRandomString;
-import ReturnEnteredString.ReturnEnteredString;
-import ReverseString.ReverceEnteredString;
+import generateRandomString.GenerateRandomString;
+import returnEnteredString.ReturnEnteredString;
+import reverseString.ReverceEnteredString;
 
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
@@ -12,7 +12,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
     static Lock lock = new ReentrantLock();
-    static Condition condition = lock.newCondition();
 
     public static void main(String[] args) {
 
