@@ -16,10 +16,11 @@ public class Main {
     public static void main(String[] args) {
 
         ExecutorService executorService = Executors.newFixedThreadPool(3);
-
+        Scanner scanner = new Scanner(System.in);
         while (true){
             menu();
-            switch (new Scanner(System.in).nextInt()){
+            int choice = scanner.nextInt();
+            switch (choice){
                 case 1:
                     lock.lock();
                     executorService.execute(ReturnEnteredString::returnEnteredString);
