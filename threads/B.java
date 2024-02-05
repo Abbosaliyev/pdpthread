@@ -5,10 +5,14 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class B extends Thread {
     private final Lock lock = new ReentrantLock();
+
     @Override
     public void run() {
-        lock.lock();
-        System.out.println("threads.B class");
-        lock.unlock();
+        try {
+            lock.lock();
+            System.out.println("threads.B class");
+        } finally {
+            lock.unlock();
+        }
     }
 }

@@ -8,8 +8,11 @@ public class C extends Thread {
 
     @Override
     public void run() {
-        lock.lock();
-        System.out.println("threads.C class");
-        lock.unlock();
+        try {
+            lock.lock();
+            System.out.println("C class");
+        } finally {
+            lock.unlock();
+        }
     }
 }
