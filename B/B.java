@@ -1,12 +1,9 @@
 package B;
 
-public class B implements Runnable{
+public class B implements Runnable {
 
     @Override
     public void run() {
-        Thread thread = new Thread(() -> {
-            System.out.println("A.A -> Salom ");
-        });
-        thread.start();
+        System.out.println("B.B -> Salom ");
     }
 }
