@@ -1,7 +1,7 @@
-import entity.A;
-import entity.B;
-import entity.C;
-import entity.D;
+import A.A;
+import B.B;
+import C.C;
+import D.D;
 
 import java.util.Scanner;
 
@@ -41,7 +41,7 @@ public class Main {
     }
 
     private static void displayMenyu() {
-        System.out.println("1-entity.A" + "\n2-entity.B" + "\n3-entity.C" + "\n4-entity.D");
+        System.out.println("1-A.A" + "\n2-B.B" + "\n3-C.C" + "\n4-D.D");
 
     }
 }

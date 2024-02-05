@@ -1,4 +1,4 @@
-package entity;
+package D;
 
 public class D implements Runnable{
     @Override

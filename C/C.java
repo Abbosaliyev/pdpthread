@@ -1,13 +1,13 @@
-package entity;
+package C;
 
-public class A implements Runnable{
+public class C implements Runnable{
     @Override
     public void run() {
         Thread thread=new Thread(()->{
-            System.out.println("A classman");
+            System.out.println("C classman");
         });
         thread.start();
 
-    }
 
+    }
 }
