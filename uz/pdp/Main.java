@@ -1,10 +1,6 @@
 package uz.pdp;
 
 import uz.pdp.service.GenerateClasses;
-import uz.pdp.utils.Input;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Main {
 
