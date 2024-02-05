@@ -1,9 +1,13 @@
-package classes;
+package entity.c;
+
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class C extends Thread {
+    Lock lock = new ReentrantLock();
     @Override
     public void run() {
-
+        lock.lock();
         try {
             System.out.println("classes.C ishladi");
             Thread.sleep(1000);
@@ -12,6 +16,9 @@ public class C extends Thread {
 
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
+        }
+        finally {
+            lock.unlock();
         }
     }
 }

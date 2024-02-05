@@ -1,7 +1,7 @@
-import classes.A;
-import classes.B;
-import classes.C;
-import classes.D;
+import entity.a.A;
+import entity.b.B;
+import entity.c.C;
+import entity.d.D;
 
 import java.util.Scanner;
 
