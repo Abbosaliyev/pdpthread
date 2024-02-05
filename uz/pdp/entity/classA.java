@@ -1,4 +1,8 @@
 package uz.pdp.entity;
 
-public class classA {
+public class classA implements Runnable{
+    @Override
+    public void run() {
+
+    }
 }
