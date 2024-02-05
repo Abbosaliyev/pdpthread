@@ -1,3 +1,5 @@
+package entity;
+
 public class intA {
     public static void isInteger(String a) {
         if(isInt(a)) {

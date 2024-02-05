@@ -1,3 +1,7 @@
+import entity.charA;
+import entity.intA;
+import entity.stringA;
+
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
