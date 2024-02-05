@@ -1,4 +1,5 @@
 
+import GenerateRandomString.GenerateRandomString;
 import ReturnEnteredString.ReturnEnteredString;
 import ReverseString.ReverceEnteredString;
 
@@ -35,7 +36,7 @@ public class Main {
 
                 case 3:
                     lock.lock();
-                    executorService.execute(ReturnEnteredString::returnEnteredString);
+                    executorService.execute(GenerateRandomString::generate);
                     lock.unlock();
 
         }
