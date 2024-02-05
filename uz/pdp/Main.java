@@ -9,31 +9,30 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        while (true){
+    public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
             display();
-        switch (scanner.nextInt()) {
-            case 1 -> {
-                A a = new A();
-                a.run();
+            switch (scanner.nextInt()) {
+                case 1 -> {
+                    A a = new A();
+                    a.run();
+                }
+                case 2 -> {
+                    B b = new B();
+                    b.run();
+                }
+                case 3 -> {
+                    C c = new C();
+                    c.run();
+                }
+                case 4 -> {
+                    D d = new D();
+                    d.run();
+                }
             }
-            case 2 -> {
-                B b = new B();
-                b.run();
-            }
-            case 3 -> {
-                C c = new C();
-                c.run();
-            }
-            case 4 -> {
-                D d = new D();
-                d.run();
-            }
+            Thread.sleep(100);
         }
-        }
-
-
 
 
     }
