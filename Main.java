@@ -1,3 +1,8 @@
+import A.A;
+import B.B;
+import C.C;
+import D.D;
+
 import java.util.Scanner;
 
 public class Main {
