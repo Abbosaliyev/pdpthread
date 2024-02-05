@@ -1,5 +1,5 @@
 package uz.pdp.entity;
 
 public class Test {
-    public static int a=0;
+    public static long a=0;
 }
